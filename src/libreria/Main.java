@@ -1,8 +1,22 @@
 
 package libreria;
 
+/**
+ * Clase principal
+ *
+ * @author Antonio Naranjo Castillo
+ * @version 1.0.0
+ * @since 13/03/2025
+ */
+
 public class Main {
   
+    /**
+     * Método principal que contiene el código a ejecutar del programa
+     *
+     * @param args Argumentos lista String
+     */
+
     public static void main(String[] args) {
         LibreriaNaranjoCastilloAntonio2425T4 miLibreriaNaranjoCastilloAntonio2425T4;
         String x;
@@ -22,10 +36,20 @@ public class Main {
         stock = miLibreriaNaranjoCastilloAntonio2425T4.obtenerStock();
         System.out.println("El libro "+x+" tiene un stock de "+stock+" unidades ahora");
         
-        añadeIngresoNaranjoCastilloAntonio2425T4(miLibreriaNaranjoCastilloAntonio2425T4,
-                "Libro Vendido");
+        añadeIngresoNaranjoCastilloAntonio2425T4(miLibreriaNaranjoCastilloAntonio2425T4, "Libro vendido");
     }
 
+    /**
+     * Método que añade un ingreso determinado de 30.5 euros y luego comprueba
+     * el saldo disponible
+     *
+     * @param miLibreriaNaranjoCastilloAntonio2425T4 Librería donde se gestiona
+     * la compra del libro
+     * @param concepto Concepto del libro en cuestión
+     * @throws Exception Excepción que maneja los errores que pudieran darse en
+     * el método al obtener el saldo
+     *
+     */
     private static void añadeIngresoNaranjoCastilloAntonio2425T4
         (LibreriaNaranjoCastilloAntonio2425T4 miLibreriaNaranjoCastilloAntonio2425T4, 
                 String concepto) {
@@ -42,9 +66,18 @@ public class Main {
             System.out.println("Fallo al obtener el saldo al ingresar");
         }
     }
-
+       
+    /**
+     * Método para comprar dos ejemplares del libro Don Quijote de La Mancha
+     *
+     * @param miLibreriaNaranjoCastilloAntonio2425T4 librería donde se gestiona
+     * la compra
+     * @throws Exception Excepción que maneja los errores que pudieran darse en
+     * el método al comprar un libro
+     */
     private static void compraQuijoteNaranjoCastilloAntonio2425T4
-        (LibreriaNaranjoCastilloAntonio2425T4 miLibreriaNaranjoCastilloAntonio2425T4) {
+        (LibreriaNaranjoCastilloAntonio2425T4 miLibreriaNaranjoCastilloAntonio2425T4)
+        {
         String x;
         int num;
         double dinero;
